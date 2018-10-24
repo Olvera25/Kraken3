@@ -1,0 +1,34 @@
+//Universidad de la Sierra Sur
+//Alumno: Luis Wonen Olvera Vásquez
+//Profesor: Rolando Pedro Gabriel
+//Materia: Bases de datos 2
+
+[
+	'{{Create table Jugador}}',
+	{
+		idJugador: '{{number}}',
+		nombre: '{{string}}',
+		nivel: '{{number}}',
+		fecha: '{{BASE64-encoded string}}'
+	}
+]
+
+[
+	'{{Create table Campeon}}',
+	{
+		idCampeon: '{{number}}',
+		nombreJugador: '{{string}}',
+		tipo: '{{string}}',
+		precio: '{{number}}',
+		fecha: '{{BASE64-encoded string}}'
+	}
+]
+
+[
+	'{{Create table Batallas}}',
+	{
+		jugadorId: '{{number}}',
+		campeonId: '{{number}}',
+		cantidad: '{{number}}'
+	}
+]
